@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#6a5294" />
+    <title>Inicio | Calico Floristería</title>
+    <link rel="icon" type="image/png" href="Imagenes/Lavanda Imagotipo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Yellowtail&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script>
+      try {
+        if (!sessionStorage.getItem("floreria_session")) {
+          window.location.replace("login.html");
+        }
+      } catch (e) {
+        window.location.replace("login.html");
+      }
+    </script>
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="home.html" aria-label="Calico Floristería, ir al inicio">
+        <img class="navbar__logo" src="Imagenes/Logotipo Hueso.png" alt="Calico Floristería" width="113" height="64" />
+      </a>
+      <nav aria-label="Principal">
+        <a href="home.html">Home</a>
+        <a href="#florario">Florario</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#cuidados">Cuidados</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+      </nav>
+      <div class="user">
+        <span>Hola, <strong id="user-name">cliente</strong></span>
+        <button class="btn btn--gg" id="logout" type="button">Salir</button>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="hero" aria-labelledby="t-hero">
+        <div class="hero__inner">
+          <div>
+            <h1 id="t-hero">Calico te invita a <span class="accent">comprar</span></h1>
+            <p>Arreglos florales hechos a mano, con flores frescas y entrega el mismo día.</p>
+            <a class="btn btn--light" href="#catalogo">Ver catálogo</a>
+          </div>
+          <img class="hero__img" src="Imagenes/Lavanda Fondo I.png" alt="Imagotipo de Calico Floristería" width="380" height="380" />
+        </div>
+      </section>
+
+      <section class="section" id="florario" aria-labelledby="t-florario">
+        <div class="inner">
+          <h2 class="section__title" id="t-florario">Florario</h2>
+          <p class="section__lead">Cada flor y cada color dicen algo. Encuentra la que mejor exprese lo que sientes.</p>
+          <div class="grid grid--4">
+            <article class="tile">
+              <img class="photo" src="Imagenes/heart.png" alt="" width="400" height="400" loading="lazy" />
+              <div class="tile__body">
+                <h3>Rosa roja</h3>
+                <p>Rojo</p>
+                <p>Amor profundo y pasión.</p>
+              </div>
+            </article>
+            <article class="tile">
+              <img class="photo" src="Imagenes/heart.png" alt="" width="400" height="400" loading="lazy" />
+              <div class="tile__body">
+                <h3>Girasol</h3>
+                <p>Amarillo</p>
+                <p>Alegría, amistad y energía positiva.</p>
+              </div>
+            </article>
+            <article class="tile">
+              <img class="photo" src="Imagenes/heart.png" alt="" width="400" height="400" loading="lazy" />
+              <div class="tile__body">
+                <h3>Tulipán</h3>
+                <p>Rosa</p>
+                <p>Cariño, ternura y gratitud.</p>
+              </div>
+            </article>
+            <article class="tile">
+              <img class="photo" src="Imagenes/heart.png" alt="" width="400" height="400" loading="lazy" />
+              <div class="tile__body">
+                <h3>Margarita</h3>
+                <p>Blanco</p>
+                <p>Pureza, inocencia y nuevos comienzos.</p>
+              </div>
+            </article>
+            <article class="tile">
+              <img class="photo" src="Imagenes/heart.png" alt="" width="400" height="400" loading="lazy" />
+              <div class="tile__body">
+                <h3>Gerbera</h3>
+                <p>Naranja</p>
+                <p>Alegría, energía y buen ánimo.</p>
+              </div>
+            </article>
+            <article class="tile">
+              <img class="photo" src="Imagenes/heart.png" alt="" width="400" height="400" loading="lazy" />
+              <div class="tile__body">
+                <h3>Lisianthus</h3>
+                <p>Morado</p>
+                <p>Gratitud, elegancia y aprecio.</p>
+              </div>
+            </article>
+            <article class="tile">
+              <img class="photo" src="Imagenes/heart.png" alt="" width="400" height="400" loading="lazy" />
+              <div class="tile__body">
+                <h3>Matiola</h3>
+                <p>Lila</p>
+                <p>Belleza duradera y devoción.</p>
+              </div>
+            </article>
+            <article class="tile">
+              <img class="photo" src="Imagenes/heart.png" alt="" width="400" height="400" loading="lazy" />
+              <div class="tile__body">
+                <h3>Hortensia azul</h3>
+                <p>Azul</p>
+                <p>Serenidad y agradecimiento.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--cream" id="catalogo" aria-labelledby="t-catalogo">
+        <div class="inner">
+          <h2 class="section__title" id="t-catalogo">Catálogo</h2>
+          <p class="section__lead">Nuestros arreglos más pedidos.</p>
+          <div class="grid grid--3">
+            <article class="tile">
+              <img class="photo" src="Imagenes/heart.png" alt="" width="400" height="400" loading="lazy" />
+              <div class="tile__body">
+                <h3>Bouquet</h3>
+                <p>Bouquet</p>
+                <p class="price">X</p>
+                <button class="btn" type="button">Agregar</button>
+              </div>
+            </article>
+            <article class="tile">
+              <img class="photo" src="Imagenes/heart.png" alt="" width="400" height="400" loading="lazy" />
+              <div class="tile__body">
+                <h3>Bouquet</h3>
+                <p>Bouquet</p>
+                <p class="price">X</p>
+                <button class="btn" type="button">Agregar</button>
+              </div>
+            </article>
+            <article class="tile">
+              <img class="photo" src="Imagenes/heart.png" alt="" width="400" height="400" loading="lazy" />
+              <div class="tile__body">
+                <h3>Bouquet</h3>
+                <p>Bouquet</p>
+                <p class="price">X</p>
+                <button class="btn" type="button">Agregar</button>
+              </div>
+            </article>
+            <article class="tile">
+              <img class="photo" src="Imagenes/heart.png" alt="" width="400" height="400" loading="lazy" />
+              <div class="tile__body">
+                <h3>Bouquet</h3>
+                <p>Bouquet</p>
+                <p class="price">X</p>
+                <button class="btn" type="button">Agregar</button>
+              </div>
+            </article>
+            <article class="tile">
+              <img class="photo" src="Imagenes/heart.png" alt="" width="400" height="400" loading="lazy" />
+              <div class="tile__body">
+                <h3>Bouquet</h3>
+                <p>Bouquet</p>
+                <p class="price">X</p>
+                <button class="btn" type="button">Agregar</button>
+              </div>
+            </article>
+            <article class="tile">
+              <img class="photo" src="Imagenes/heart.png" alt="" width="400" height="400" loading="lazy" />
+              <div class="tile__body">
+                <h3>Bouquet</h3>
+                <p>Bouquet</p>
+                <p class="price">X</p>
+                <button class="btn" type="button">Agregar</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="cuidados" aria-labelledby="t-cuidados">
+        <div class="inner">
+          <h2 class="section__title" id="t-cuidados">Cuidados de las flores</h2>
+          <p class="section__lead">Con estos consejos tus flores durarán mucho más.</p>
+          <ul class="care">
+            <li><strong><span class="icon icon--water" aria-hidden="true"></span>Agua limpia</strong>Cambia el agua cada 2 días y usa un jarrón limpio.</li>
+            <li><strong><span class="icon icon--scissors" aria-hidden="true"></span>Corta los tallos</strong>Hazlo en diagonal, 2 cm, para que absorban mejor el agua.</li>
+            <li><strong><span class="icon icon--sun" aria-hidden="true"></span>Lejos del sol directo</strong>Colócalas en un lugar fresco y ventilado.</li>
+            <li><strong><span class="icon icon--fruit" aria-hidden="true"></span>Lejos de la fruta</strong>El gas de la fruta madura marchita las flores.</li>
+            <li><strong><span class="icon icon--leaves" aria-hidden="true"></span>Quita hojas sumergidas</strong>Evitan que el agua se llene de bacterias.</li>
+            <li><strong><span class="icon icon--food" aria-hidden="true"></span>Nutriente floral</strong>Usa el sobre incluido en tu pedido para alargar su vida.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section--cream" id="servicios" aria-labelledby="t-servicios">
+        <div class="inner">
+          <h2 class="section__title" id="t-servicios">Nuestros servicios</h2>
+          <p class="section__lead">Hacemos que cada ocasión sea especial.</p>
+          <div class="grid grid--4">
+            <article class="tile service"><span class="icon icon--truck" aria-hidden="true"></span><h3>Entrega a domicilio</h3><p>El mismo día en tu ciudad.</p></article>
+            <article class="tile service"><span class="icon icon--cake" aria-hidden="true"></span><h3>Eventos y bodas</h3><p>Decoración floral a la medida.</p></article>
+            <article class="tile service"><span class="icon icon--bouquet" aria-hidden="true"></span><h3>Ramos</h3><p>Ramos del día y personalizados.</p></article>
+            <article class="tile service"><span class="icon icon--dove" aria-hidden="true"></span><h3>Arreglos fúnebres</h3><p>Coronas y arreglos con respeto.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="nosotros" aria-labelledby="t-nosotros">
+        <div class="inner">
+          <h2 class="section__title" id="t-nosotros">Sobre Calico</h2>
+          <div class="info">
+            <img class="info__logo" src="Imagenes/Lavanda Imagotipo.png" alt="Imagotipo de Calico Floristería" width="240" height="240" loading="lazy" />
+            <div>
+              <p>
+                En Calico seleccionamos flores frescas cada mañana y las convertimos en
+                arreglos únicos para acompañar tus momentos más importantes.
+              </p>
+              <dl>
+                <dt>Dirección</dt><dd>Casa</dd>
+                <dt>Horario</dt><dd>Lunes a sábado, 9:00 a.m – 20:00 p.m</dd>
+                <dt>Teléfono</dt><dd>(642) 492 0244 </dd>
+                <dt>Correo</dt><dd>hola@calico.com</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img src="Imagenes/Logotipo%20Hueso.png" alt="Calico Floristería" width="127" height="72" loading="lazy" />
+      <p>© 2026 Calico Floristería. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
